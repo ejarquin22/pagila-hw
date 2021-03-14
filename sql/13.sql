@@ -7,4 +7,5 @@
 SELECT film_id, title, language_id, name
 FROM film
 INNER JOIN language USING (language_id)
-WHERE title LIKE 'K%' OR  title LIKE 'Q%';
+WHERE title LIKE 'K%' OR  title LIKE 'Q%'
+ORDER BY title;
